@@ -23,7 +23,7 @@ stdin.on("data", function (key) {
 	}
 	//if key is spacebar
 	if (key === " ") {
-		basspulse(pulseGradient);
+		basspulse([pulseGradient,pinkPulse,purplePulse]);
 	} else if (key === "q") {
 		randompulse(pulseGradient2);
 	} else if (key === "w") {
@@ -44,6 +44,14 @@ var rainbow = new Gradient([
 
 var pulseGradient = new Gradient([
 	new GradientStop(0, new Color([255, 0, 0])),
+	new GradientStop(1, new Color([0, 0, 0])),
+]);
+var pinkPulse = new Gradient([
+	new GradientStop(0, new Color([255, 0, 255])),
+	new GradientStop(1, new Color([0, 0, 0])),
+]);
+var purplePulse = new Gradient([
+	new GradientStop(0, new Color([125, 0, 255])),
 	new GradientStop(1, new Color([0, 0, 0])),
 ]);
 //pulse gradient yellow
