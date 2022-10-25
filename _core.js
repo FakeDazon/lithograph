@@ -75,7 +75,7 @@ function randompulse(g) {
 	new PulseEffect(fixture, {
 		gradient: g || pulseGradient3,
 		type: "instant",
-		duration: 200,
+		duration: 20,
 		width: 10,
 		pixelStart: "random",
 	});
